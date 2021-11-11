@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Sum of inputs</h1>
+        <link rel="stylesheet" href="./homework.js">
+    </head>
+    <body>
+        <span>
+            <input type="text" id="Num1"/>
+            <span>+</span>
+            <input type="text" id="Num2"/>
+            <button onclick="calc()">=</button>
+            <input disabled type="text" id="result"/>
+        </span>
+    </body>
+
+
+
+
+
+
+    <script>
+        function calc(){
+            let a = parseFloat(document.getElementById("Num1").value);
+            let b = parseFloat(document.getElementById("Num2").value);
+            document.getElementById("result").value=a+b;
+
+        }
+    </script>
+    
+
+</html>
